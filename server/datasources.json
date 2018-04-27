@@ -1,0 +1,12 @@
+{
+  "givesombody": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "givesomebody",
+    "password": "",
+    "name": "givesombody",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

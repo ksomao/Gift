@@ -1,0 +1,44 @@
+{
+  "name": "Gift",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "reserved": {
+      "type": "boolean"
+    },
+    "image": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "donor": {
+      "type": "belongsTo",
+      "model": "Donor",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "receiver": {
+      "type": "belongsTo",
+      "model": "Receiver",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
